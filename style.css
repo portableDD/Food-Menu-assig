@@ -52,8 +52,75 @@ h1,h2{
     color: #333;
 }
 
+/* home page */
+
+main {
+    padding: 50px;
+  }
+  
+  .hero {
+    position: relative;
+    text-align: center;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 1px 1px 2px black;
+  }
+  
+  .hero-text h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .hero-text p {
+    font-size: 1.2em;
+    margin: 0 20px;
+  }
+  
+  .hero-text a {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .about {
+    margin-top: 50px;
+  }
+  
+  .call-to-action {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  footer {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+  }
+
 /* table */
 
+.tableDiv{
+    padding: 20px;
+    margin: 2% auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
 table,
 th,
 tr,
@@ -73,9 +140,10 @@ td {
 form {
     margin: 2rem auto;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 50%;
+    border: 1px solid #ccc;
 }
 
 label {
@@ -184,9 +252,12 @@ input[type="submit"]:hover {
     margin: 0px auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    /* align-items: center; */
-    /* align-content: space-around; */
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+
 }
 .foodCard{
     background-color: whitesmoke;
