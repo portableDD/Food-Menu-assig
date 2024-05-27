@@ -88,18 +88,24 @@ main {
   }
   
   .hero-text a {
+    position: absolute;
     background-color: #007bff;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     text-decoration: none;
+    top: 110%;
+    left: 40%;
   }
   
   .about {
     margin-top: 50px;
   }
-  
+  .story img{
+    width: 100%;
+    height: auto;
+  }
   .call-to-action {
     text-align: center;
     margin-top: 50px;
@@ -109,7 +115,13 @@ main {
     background-color: #f2f2f2;
     padding: 10px;
     text-align: center;
-  }
+    
+  } 
+   footer img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+   }
 
 /* table */
 
@@ -295,7 +307,7 @@ input[type="submit"]:hover {
 
 .videoDiv{
     max-width: 1130px;
-    margin: 0% auto; 
+    margin: 2% auto; 
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
