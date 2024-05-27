@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <!-- logo -->
+      <div class="logo">
+        <a href="#">FS</a> 
+      </div>
+      <!-- navbar -->
+      <nav class="site-menu">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="foodTable.html">Food Table</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="imgGallery.html">Image Gallery</a></li>
+          <li><a href="orderForm.html">Order Form</a></li>
+        </ul>
+      </nav>
+    </header>
+    <form action="">
+      <h1>Order Meal</h1>
+      <fieldset class="payment-mode">
+        <legend>Customer Information</legend>
+        <label for="username">Name</label><br />
+        <input
+          type="text"
+          name="username"
+          placeholder="Full Name"
+          required
+        /><br />
+
+        <label for="email">Email</label><br />
+        <input
+          type="email"
+          name="gmail"
+          placeholder="example@gmail.com"
+          required
+        /><br />
+
+        <label for="number">Phone Number</label><br />
+        <input
+          type="tel"
+          name="gmail"
+          placeholder="example@gmail.com"
+          required
+        /><br />
+        <label for="email">Address</label><br />
+        <textarea
+          name="address"
+          id="address"
+          cols="25"
+          rows="5"
+          required
+        ></textarea>
+      </fieldset>
+
+      <fieldset class="payment-mode">
+        <legend>Order Item</legend>
+        <label for="Date">Date</label><br />
+        <input type="datetime-local" name="Date" required /><br />
+
+        <label for="Drop down">Starter</label><br />
+        <select name="year" id="yeardrop" required>
+          <option value="">choose your Meal</option>
+          <option value="">Rice and Stew</option>
+          <option value="">Jollf Rice and Chicken</option>
+          <option value="">Jollf Rice and Fish</option>
+          <option value="">Jollf Rice and Beef</option>
+          <option value="">Fried Rice and Fish</option>
+          <option value="">Fried Rice and Chicken</option>
+          <option value="">Fried Rice and Beef</option></select
+        ><br />
+        <label for="Drop down">Main Course</label><br />
+        <select name="year" id="yeardrop" required>
+          <option value="">choose your Meal</option>
+          <option value="">Rice and Stew</option>
+          <option value="">Jollf Rice and Chicken</option>
+          <option value="">Jollf Rice and Fish</option>
+          <option value="">Jollf Rice and Beef</option>
+          <option value="">Fried Rice and Fish</option>
+          <option value="">Fried Rice and Chicken</option>
+          <option value="">Fried Rice and Beef</option></select
+        ><br />
+        <label for="Drop down">Dessert</label><br />
+        <select name="year" id="yeardrop" required>
+          <option value="">choose your Meal</option>
+          <option value="">Rice and Stew</option>
+          <option value="">Jollf Rice and Chicken</option>
+          <option value="">Jollf Rice and Fish</option>
+          <option value="">Jollf Rice and Beef</option>
+          <option value="">Fried Rice and Fish</option>
+          <option value="">Fried Rice and Chicken</option>
+          <option value="">Fried Rice and Beef</option></select
+        ><br />
+        <label for="Drop down">Drinks</label><br />
+        <select name="year" id="yeardrop" required>
+          <option value="">Choose your Drink</option>
+          <option value="">Bottle Water</option>
+          <option value="">Monster Energy</option>
+          <option value="">Coke Cola</option>
+          <option value="">Sprite</option>
+          <option value="">Pespi</option>
+          <option value="">Fearless Energy</option>
+          <option value="">Predator Energy</option></select
+        ><br />
+        <label for="Textarea">More Order</label><br />
+        <textarea
+          name="text"
+          id="text"
+          cols="25"
+          rows="5"
+          placeholder="Not on the list, Don't worry place your order here"
+        ></textarea>
+      </fieldset>
+      <fieldset class="payment-mode">
+        <legend>Payment mode</legend>
+        <div>
+          <!-- <h2>Payment Mode</h2> -->
+          <div class="payment-methods">
+            <label>
+              <input type="radio" name="payment-method" value="cash" />
+              Cash
+            </label>
+            <label>
+              <input type="radio" name="payment-method" value="card" />
+              Card
+            </label>
+            <label>
+              <input type="radio" name="payment-method" value="online" />
+              Online Payment
+            </label>
+          </div>
+          <div class="card-details" style="display: none">
+            <!--  -->
+            <label>
+              Card Number:
+              <input type="text" name="card-number" />
+            </label>
+            <label>
+              Expiration Date:
+              <input type="date" name="expiration-date" />
+            </label>
+            <label>
+              CVV:
+              <input type="text" name="cvv" />
+            </label>
+          </div>
+        </div>
+      </fieldset>
+      <!-- <button type="submit">Make Payment</button> -->
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
