@@ -122,6 +122,12 @@ main {
     height: 50px;
     margin-bottom: 20px;
    }
+   .social{
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+   }
 
 /* table */
 
